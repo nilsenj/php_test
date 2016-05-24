@@ -24,9 +24,14 @@ In this case I just used some sort of "Facade + something" pattern doing Mailer 
 **In case if you would tell me - "we need only refactoring"**
 
 yes I know but it's up to you check, test it and make ideas of why I'm bad or good
+___
 you could just use some sort of abstract factory for different mails
+___
 another point is defining variables the right way - not just $c but $customer for example))
+___
 one more point is throwing errors or exceptions if they are in the loop which don't affect the work of the system and not critical
+___
 the best option is to throw exceptions on the lower level of business logic and catching it on the higher doing logger or
 in case of the loop trying to skip if this is the problem of data layer complexity
+___
 point * we could use reflection to use for example our mail composer only by presenting the class name but i didn't do that sort of functionality))
