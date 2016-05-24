@@ -1,0 +1,25 @@
+{
+    "name": "nilse/php_test",
+    "description": "the refactored functionality app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikolenko Ivan",
+            "email": "nikoleivan@gmail.com"
+        }
+    ],
+    "require": {
+        "hassankhan/config": "^0.10.0"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-4": {
+            "Core\\": "Core/",
+            "Core\\Config\\": "Core/Config/",
+            "App\\": "app/",
+            "App\\DataLayer\\": "app/DataLayer/",
+            "App\\MailComposers\\": "app/MailComposers/"
+        }
+    }
+}
